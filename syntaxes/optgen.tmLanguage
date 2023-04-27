@@ -262,6 +262,8 @@
                         OpName |
 						Equal |
 						NotEqual |
+						Between
+						NotBetween |
 						Unary |
 						Func)\b</string>
 					<key>name</key>
