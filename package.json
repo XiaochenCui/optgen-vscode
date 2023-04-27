@@ -2,13 +2,13 @@
     "name": "optgen",
     "displayName": "Optgen Language Support",
     "description": "Language support for optimizer generator (optgen) files containing operator definitions and matching/replace rules.",
-    "version": "0.0.1",
-    "publisher": "andy-kimball",
+    "version": "0.0.2",
+    "publisher": "XiaochenCui",
     "engines": {
         "vscode": "^1.19.0"
     },
     "categories": [
-        "Languages"
+        "Programming Languages"
     ],
     "contributes": {
         "languages": [{

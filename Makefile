@@ -1,3 +1,6 @@
+package = xiaochencui.optgen-vscode-0.0.2
+dest = ~/.vscode/extensions
+
 install:
-	rm -rf ~/.vscode/extensions/optgen-vscode
-	cp -r ../optgen-vscode ~/.vscode/extensions/
+	rm -rf $(dest)/$(package)
+	cp -r ../optgen-vscode $(dest)/$(package)
