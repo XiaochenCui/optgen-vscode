@@ -1,4 +1,4 @@
-package = xiaochencui.optgen-vscode-0.0.2
+package = xiaochen-cui.optgen-vscode-0.0.2
 dest = ~/.vscode/extensions
 
 install:

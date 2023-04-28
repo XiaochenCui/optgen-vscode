@@ -3,7 +3,7 @@
     "displayName": "Optgen Language Support",
     "description": "Language support for optimizer generator (optgen) files containing operator definitions and matching/replace rules.",
     "version": "0.0.2",
-    "publisher": "XiaochenCui",
+    "publisher": "xiaochen-cui",
     "engines": {
         "vscode": "^1.19.0"
     },
