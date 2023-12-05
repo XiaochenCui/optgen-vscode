@@ -260,8 +260,16 @@
                         Delete |
                         CreateTable |
                         OpName |
+
+						Comparison |
 						Equal |
 						NotEqual |
+						GreaterThan |
+						LessThan |
+						GreaterEqual |
+						LessEqual |
+						Like |
+						NotLike |
 						Between
 						NotBetween |
 						Unary |
