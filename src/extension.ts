@@ -37,8 +37,6 @@ class OptDocumentSymbolProvider implements vscode.DocumentSymbolProvider {
 		Thenable<vscode.DocumentSymbol[]> {
 		let symbols: vscode.DocumentSymbol[] = [];
 
-		// let insideDefine = false;
-
 		let currentSymbol: vscode.DocumentSymbol | undefined = undefined;
 
 		for (let i = 0; i < document.lineCount; i++) {
@@ -72,18 +70,6 @@ class OptDocumentSymbolProvider implements vscode.DocumentSymbolProvider {
 			}
 
 			// if start with "define", then it's a struct definition
-			// 
-			// e.g:
-			// define Select {
-			// 	Distinct bool
-			// 	SelectExprs SelectExprs
-			// 	From TableExprs
-			// 	Where Where
-			// 	GroupBy GroupBy
-			// 	OrderBy OrderBy
-			// 	Limit Limit
-			// }
-
 			match = line.text.match(/^define\s+(.*?)\s+\{/);
 			if (match) {
 				let structName = match[1].trim();
@@ -97,7 +83,6 @@ class OptDocumentSymbolProvider implements vscode.DocumentSymbolProvider {
 				if (match) {
 					let fieldName = match[1].trim();
 					let fieldType = match[2].trim();
-					console.log("Field: " + fieldName + ", type: " + fieldType);
 
 					let field = new vscode.DocumentSymbol(fieldName, fieldType, vscode.SymbolKind.Field, line.range, line.range);
 					currentSymbol.children.push(field);
